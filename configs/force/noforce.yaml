@@ -1,0 +1,4 @@
+name: NoForce
+_target_: utils.generation.NoForce
+amplitude: 0
+resolution: ${..resolution}

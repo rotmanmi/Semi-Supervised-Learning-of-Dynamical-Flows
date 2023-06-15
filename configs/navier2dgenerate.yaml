@@ -1,0 +1,28 @@
+defaults:
+  - force: noforce
+
+hydra:
+  run:
+    dir: './outputs'
+  sweep:
+    dir: './outputs'
+    subdir: ${force.name}/${hydra.job.override_dirname}
+
+  job:
+    config:
+      override_dirname:
+        exclude_keys:
+          - force
+
+
+dt: 0.1
+nu: 0.001
+seed: 1234
+resolution: 64
+time_steps: 10
+interpolate_dt: 0.1
+alphav: 0.0
+
+incompressibility:
+  max_iterations: 100000
+  precision: 1e-3

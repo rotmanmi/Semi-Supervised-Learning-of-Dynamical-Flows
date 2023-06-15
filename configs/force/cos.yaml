@@ -1,0 +1,5 @@
+name: CosineForce
+_target_: utils.generation.CosForce
+freq: 512
+amplitude: 0.1
+resolution: ${..resolution}

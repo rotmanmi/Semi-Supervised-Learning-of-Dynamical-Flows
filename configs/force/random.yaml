@@ -1,0 +1,7 @@
+name: RandomForce
+_target_: utils.generation.RandomForce
+k_min: 0.1
+k_max: 10
+amplitude: 1.0
+resolution: ${..resolution }
+smoothness: 1.0
